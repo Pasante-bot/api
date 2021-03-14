@@ -1,0 +1,33 @@
+{
+  "name": "api",
+  "version": "0.0.1",
+  "description": "Pasante's API for database interactions.",
+  "devDependencies": {
+    "@types/jest": "^26.0.20",
+    "@types/node": "^8.0.29",
+    "@typescript-eslint/eslint-plugin": "^4.17.0",
+    "@typescript-eslint/parser": "^4.17.0",
+    "eslint": "^7.22.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.3.1",
+    "jest": "^26.6.3",
+    "prettier": "^2.2.1",
+    "ts-jest": "^26.5.3",
+    "ts-node": "3.3.0",
+    "typescript": "3.3.3333"
+  },
+  "dependencies": {
+    "typeorm": "0.2.31",
+    "reflect-metadata": "^0.1.10",
+    "mysql": "^2.14.1"
+  },
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "lint": "eslint \"src/**/*.ts\" --quiet --fix",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "build": "tsc",
+    "test": "jest --config jestconfig.json"
+  }
+}
