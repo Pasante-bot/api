@@ -29,5 +29,6 @@
     "format": "prettier --write \"src/**/*.ts\"",
     "build": "tsc",
     "test": "jest --config jestconfig.json"
-  }
+  },
+  "license": "MIT"
 }
